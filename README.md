@@ -29,4 +29,6 @@ Paso a Paso del Proyecto
     - Electron
     - Express
     - Socket.io
-    - Body-parser (para manejar datos POST)  
+    - Body-parser (para manejar datos POST)
+      
+En la implementación actual, los usuarios registrados se almacenan en un objeto en memoria llamado `users`, el cual no es escalable para aplicaciones mas grandes. Si el servidor se reinicia, todos los usuarios registrados se perderán. 
