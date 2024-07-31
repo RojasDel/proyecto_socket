@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Socket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chat-container" class="hidden">
+        <h1>Chat Socket</h1>
+        <div id="register">
+            <input type="text" id="reg-username" placeholder="Nuevo nombre de ususario">
+            <input type="password" id="reg-password" placeholder="Nuevo Password">
+            <button id="register-btn">Registrar</button>
+        </div>
+        <div id="login">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="connect">Conectar</button>
+        </div>
+        <div id="chat" style="display:none;">
+            <input type="text" id="message" placeholder="Message">
+            <button id="send">Send</button>
+            <div id="messages"></div>
+        </div>
+    </div>
+    <button id="toggle-chat" class="chat-emoji">&#128172;</button>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>

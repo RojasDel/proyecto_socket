@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#chat-container {
+    width: 25%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#chat-container h1 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#register, #login, #chat {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#register input, #login input, #chat input {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#register button, #login button, #chat button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#messages {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+#toggle-chat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1000; /* Para asegurarse de que el botón esté siempre visible */
+}
+
+.hidden {
+    display: none;
+}
